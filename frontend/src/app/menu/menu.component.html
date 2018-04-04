@@ -1,0 +1,9 @@
+<mat-toolbar class="nav">
+  <span style="color: azure">RAQEEB</span>
+  <span style="flex: auto"></span>
+  <div style="display: flex;height: 100%" *ngFor="let mItem of mItems" (click)="onSelectPosts(mItem)" >
+    <div class="navItems"><a class="links" style="width: 100%; text-align: center" routerLink="{{mItem.path}}">{{mItem.title}}</a></div>
+    <div style="width: 2px; background: aquamarine"></div>
+    <!--<div class="navItems"><a class="links" style="width: 100%; text-align: center" routerLink="/blog">{{mItem.title}}</a></div>-->
+  </div>
+</mat-toolbar>
